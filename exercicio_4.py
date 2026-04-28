@@ -37,3 +37,12 @@ Resposta:
 Sim
 
 """
+
+cromossomo = str(input("Digite o cromossomo da sua variante: "))
+posicao = int(input("Digite a posição da sua variante: "))
+
+
+if cromossomo == "chr17" and posicao >= 41196312 and posicao <= 41277500:
+    print("Sim")
+else: 
+    print("Não")
