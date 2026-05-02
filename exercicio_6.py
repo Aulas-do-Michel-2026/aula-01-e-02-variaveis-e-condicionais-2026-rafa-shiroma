@@ -52,3 +52,29 @@ Qual país você vai viajar? China
 Resposta:
 Não temos essa moeda em caixa.
 """
+
+destino = input("Para onde você vai viajar?: ")
+
+if destino == "Estados Unidos":
+    moeda = "USD"
+    taxa = 5 # 5 reais = 1 USD
+    valor_reais = float(input("Quantos reais você vai converter? "))
+    convertido = valor_reais / taxa
+    print(f"{convertido:.2f} {moeda}")
+
+elif destino == "argentina":
+    moeda = "ARS"
+    taxa = 180  # 1 real = 180 ARS
+    valor_reais = float(input("Quantos reais você vai converter? "))
+    convertido = valor_reais * taxa
+    print(f"{convertido:.2f} {moeda}")
+
+elif destino == "Japão":
+    moeda = "JPY"
+    taxa = 30  # 1 real = 30 JPY
+    valor_reais = float(input("Quantos reais você vai converter? "))
+    convertido = valor_reais * taxa
+    print(f"{convertido:.2f} {moeda}")
+
+else:
+    print("Não temos essa moeda em caixa.")
